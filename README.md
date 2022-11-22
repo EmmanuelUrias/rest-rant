@@ -20,9 +20,10 @@ as a food enthusiast I need a community centered review website so i can read th
 | DELETE | /places/:id/rant/rantId | Delete a rant (comment) about a particular place |
 | GET | \* | 404 page (matches any route not defined above) |
 
-| Places   |
-| -------- | --------- |
+| Places |
+
 | Field    | Type      |
+| -------- | --------- |
 | \_id     | Object ID |
 | name     | String    |
 | city     | String    |
