@@ -23,7 +23,6 @@ as a food enthusiast I need a community centered review website so i can read th
 | Places   |
 | -------- | --------- |
 | Field    | Type      |
-| -----    | ----      |
 | \_id     | Object ID |
 | name     | String    |
 | city     | String    |
