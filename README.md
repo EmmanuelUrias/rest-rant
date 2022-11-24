@@ -1,5 +1,9 @@
 # Project rest-rant
 
+# Note to self
+
+h1 css styling isnt working properly, images dont display properly. Watch ponapto video for 11/23/22 to understand the api guidelines hint: 'restful API's'
+
 rest-rant is an app where users can review restaurants
 
 **User Story:**
