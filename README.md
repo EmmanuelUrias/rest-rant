@@ -2,7 +2,7 @@
 
 # Note to self
 
-h1 css styling isnt working properly, images dont display properly. Watch ponapto video for 11/23/22 to understand the api guidelines hint: 'restful API's'. New places don't display but the data gets through. Go through part 1-current and add all the possible comments to your code. Do bonus for part 5
+images dont display properly. New places don't display but the data gets through. Go through part 1-current and add all the possible comments to your code. Do bonus for part 5
 
 rest-rant is an app where users can review restaurants
 
