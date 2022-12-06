@@ -6,9 +6,12 @@ function show (data) {
         <Default>
             <main>
                 <h1>{data.place.name}</h1>
+                <img src='/images/h-thai-ml-tables.jpg' alt= {data.place.name}></img>
                 <body>
-                    <h2>rating <p>unrated</p></h2>
-                    <h3>Description<p> yada yada</p></h3>
+                    <h4>rating <p>unrated</p></h4>
+                    <h3>Description</h3>
+                    <h3>{data.place.showEstablished()}</h3>
+                    <h4>Serving {data.place.cuisines}</h4>
                 </body>
                 <h4>Comments<p>No comments yet</p></h4>
                 <a href={`/places/${data.id}/edit`} className='btn btn-warning'>Edit</a>

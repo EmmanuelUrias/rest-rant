@@ -2,7 +2,6 @@
 require('dotenv').config()
 const express = require('express')
 const methodOverride = require('method-override')
-const mongoose = require('mongoose')
 
 const app = express()
 
@@ -15,9 +14,8 @@ app.engine('jsx', require('express-react-views').createEngine())
 app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true}))
 app.use(methodOverride('_method'))
-mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true},
-    () => {console.log('connected to mongo', process.env.MONGO_URI)})
-
+    
+        
 app.use('/places', require('./controllers/places'))
 
 app.get('/', (req, res) => {
@@ -29,3 +27,4 @@ app.get('*', (req, res) => {
 })
 
 app.listen(process.env.PORT)
+

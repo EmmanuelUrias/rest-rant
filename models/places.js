@@ -13,7 +13,10 @@ const placeSchema = new Schema ({
     founded: Number
 })
 
-// Goes after schema
-const place = mongoose.model('Place', placeSchema)
+placeSchema.methods.showEstablished = function() {
+    return `${this.name} has been serving ${this.city}, ${this.state} since ${this.founded}.`
+}
 
-module.exports = place
+// Goes after schema
+module.exports = mongoose.model('Place', placeSchema)
+
