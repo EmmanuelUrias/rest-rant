@@ -1,4 +1,5 @@
 const React = require('react')
+const places = require('../../models/places')
 const Default = require('../default')
 function index (data) {
     let placesFormatted = data.places.map((place) => {

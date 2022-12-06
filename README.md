@@ -2,7 +2,7 @@
 
 # Note to self
 
-images dont display properly. New places don't display but the data gets through. Go through part 1-current and add all the possible comments to your code. Do bonus for part 5
+images dont display properly. New places don't display but the data gets through. Go through part 1-current and add all the possible comments to your code. Do bonus for part 5. Do super bonus for part 9.
 
 rest-rant is an app where users can review restaurants
 

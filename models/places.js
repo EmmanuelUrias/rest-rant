@@ -10,7 +10,7 @@ const placeSchema = new Schema ({
     cuisines: {type: String, require: true},
     city: {type: String, default: 'Anytown'},
     state: {type: String, default: 'USA'},
-    founded: Number
+    founded: {type: Number, min: [803, `According to google it doesn't get older than this`], max: [new Date().getFullYear(), ` Hey time traveller this restuarant doesn't exist yet`]}
 })
 
 placeSchema.methods.showEstablished = function() {
