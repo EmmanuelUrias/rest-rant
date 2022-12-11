@@ -10,7 +10,12 @@ const placeSchema = new Schema ({
     cuisines: {type: String, require: true},
     city: {type: String, default: 'Anytown'},
     state: {type: String, default: 'USA'},
-    founded: {type: Number, min: [803, `According to google it doesn't get older than this`], max: [new Date().getFullYear(), ` Hey time traveller this restuarant doesn't exist yet`]}
+    founded: {type: Number, 
+        min: [803, `According to google it doesn't get older than this`], 
+        max: [new Date().getFullYear(), ` Hey time traveller this restuarant doesn't exist yet`]}
+},
+{
+ comments: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Comment'}]
 })
 
 placeSchema.methods.showEstablished = function() {

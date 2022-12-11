@@ -23,7 +23,7 @@ router.post('/', (req, res) => {
        if (err && err.name == 'ValidationError') {
             let message = 'Validation Error: '
             for (var field in err.errors) {
-                message += `${field} was ${err.errors[field].value}.`
+                message += `*${field} was ${err.errors[field].value}*`
                 message += `${err.errors[field].message}`
             }
             console.log('Validation error message', message)
@@ -69,7 +69,9 @@ router.put('/:id', (req, res) => {
 //Delete
 router.delete('/:id', (req, res) => {
     db.Place.findByIdAndDelete(req.params.id)
+    .populate('comments')
     .then(place => {
+        console.log(place.comments)
         res.redirect('/places')
     })
     .catch (err => {

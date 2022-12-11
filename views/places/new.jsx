@@ -11,9 +11,9 @@ function newForm (data) {
     return (
         <Default>
             <main>
+                <body>
                 <h1>Add a New Place</h1>
                 {message}
-                <body>
                 <form method="POST" action="/places">
                     <div className='form-group'>
                         <label htmlFor="name">Place Name</label>
