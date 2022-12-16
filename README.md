@@ -2,7 +2,7 @@
 
 # Note to self
 
-images dont display properly. New places don't display but the data gets through. Go through part 1-current and add all the possible comments to your code. Do bonus for part 5. Do super bonus for part 9. Routes edit, update, and delete do not work.
+images dont display properly. Go through part 1-current and add all the possible comments to your code. Do bonus for part 5. Do super bonus for part 9. Routes edit, update, and delete do not work. There is a bug in the seed-comments.js file where the push is undefined causing the .length method to not work.
 
 rest-rant is an app where users can review restaurants
 

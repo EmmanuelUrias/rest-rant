@@ -6,7 +6,7 @@ db.Place.create ([
         city: 'Seattle',
         state: 'WA', 
         cuisines: 'Thai, Pan-Asain',
-        pic: '/images/h-thai-ml-tables.jpg',
+        pic: 'images/image of cafe.jpeg',
         founded: 1989
     }, 
     {
@@ -14,12 +14,11 @@ db.Place.create ([
         city: 'Pheonix',
         state: 'AZ',
         cuisines: 'Coffee, Bakery',
-        pic: '/images/coffee-cat.jpg',
+        pic: '/images/cute-cat-photos-1593441022.jpg',
         founded: 2020
     }
 ])
 .then(() => {
-    console.log('Success')
     process.exit()
 })
 .catch(err => {
