@@ -12,7 +12,7 @@ function index (data) {
                     </a>
                 </h2>
                 <p className='text-center'>
-                    {place.cuisines}
+                    {places.cuisines}
                 </p>
                 <img src={place.pic} alt={place.name}></img>
                 <p className='text-center'>

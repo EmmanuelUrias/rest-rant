@@ -43,3 +43,12 @@ main {
     height: 70px;
 }
 
+img {
+    width: 300px;
+    height: auto;
+}
+
+.btn {
+    margin: auto;
+    width: 150px;
+}

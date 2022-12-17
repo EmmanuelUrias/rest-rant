@@ -7,7 +7,7 @@ function home () {
             <main>
                 <h1>Rest-Rant</h1>
                 <div>
-                    <img src="public/images/sanjeevan-satheeskumar-MG8c-4n1QVE-unsplash.jpg" alt="Tree"></img>
+                    <img className='treeImage' src="/images/sanjeevan-satheeskumar-MG8c-4n1QVE-unsplash.jpg" alt="Tree"></img>
                     <div>
                         Photo by <a href="https://unsplash.com/@evannn_n">Sanjeevan SatheesKumar </a> on <a href="https://unsplash.com/s/photos/free">Unsplash</a>
                     </div>

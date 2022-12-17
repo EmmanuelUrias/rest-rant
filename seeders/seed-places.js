@@ -1,4 +1,5 @@
 const db = require('../models')
+const places = require('../models/places')
 
 db.Place.create ([
     {
@@ -6,7 +7,7 @@ db.Place.create ([
         city: 'Seattle',
         state: 'WA', 
         cuisines: 'Thai, Pan-Asain',
-        pic: 'images/image of cafe.jpeg',
+        pic: '/images/image of cafe.jpeg',
         founded: 1989
     }, 
     {
@@ -14,7 +15,7 @@ db.Place.create ([
         city: 'Pheonix',
         state: 'AZ',
         cuisines: 'Coffee, Bakery',
-        pic: '/images/cute-cat-photos-1593441022.jpg',
+        pic: '/images/coffee-cat.jpg',
         founded: 2020
     }
 ])

@@ -70,23 +70,25 @@ function show (data) { // data = { id: id, place: place }
                     <button type='submit' className='btn btn-danger'>Delete</button>
                 </form>
                 <form method='POST' action = {`/places/${data.place.id}/comment/${comments.id}?_method=PUT`}>
-                <div className = 'form-group'>
+               <div className='row'>
+                <div className = 'form-group col-sm-6 col-md4'>
                         <label htmlFor = "author">Author</label>
                         <input className = 'form-control' id = "author" name = "author" value = {data.place.comments.author} required/>
+                    </div>
+                    <div className = 'form-group col-sm-6 col-md4'>
+                        <label htmlFor = 'stars'>Rating</label>
+                        <input className = 'form-control' type = 'number' min = '0' max = '5' step = '0.5' id = 'stars' name = 'stars' value = {data.place.comments.stars}/>
                     </div>
                     <div className = 'form-group'>
                         <label htmlFor = 'content'>Content</label>
                         <input className = 'form-control' id = "content" name = "content" value = {data.place.comments.content}/>
                     </div>
                     <div className = 'form-group'>
-                        <label htmlFor = 'stars'>Rating</label>
-                        <input className = 'form-control' type = 'number' min = '0' max = '5' step = '0.5' id = 'stars' name = 'stars' value = {data.place.comments.stars}/>
-                    </div>
-                    <div className = 'form-group'>
                         <label htmlFor = 'rant'>Rant----</label>
                         <input className = 'checkbox' type= 'checkbox' id = 'rant' name = 'rant' value = {data.place.comments.rant}/>
                     </div>
                     <input className = 'btn btn-primary' type = 'submit' value = 'Add Comment'/>
+                    </div>
                     <form method = 'POST' action = {`/places/${data.place.id}/comment/${comments.id}?_method=DELETE`}>
                         <input type = 'submit' className = 'btn btn-danger' value = 'Delete Comment'></input>
                     </form>
